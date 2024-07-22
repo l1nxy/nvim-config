@@ -38,22 +38,59 @@ return {
   },
 
   -- You can disable default plugins as follows:
+  -- {
+  --   "max397574/better-escape.nvim",
+  --   config = function()
+  --     require("better_escape").setup {
+  --       mapping = { "kj" }, -- a table with mappings to use
+  --       timeout = vim.o.timeoutlen, -- the time in which the keys must be hit in ms. Use option timeoutlen by default
+  --       clear_empty_lines = false, -- clear line after escaping if there is only whitespace
+  --       keys = "<Esc>", -- keys used for escaping, if it is a function will use the result everytime
+  --       -- example(recommended)
+  --       -- keys = function()
+  --       --   return vim.api.nvim_win_get_cursor(0)[2] > 1 and '<esc>l' or '<esc>'
+  --       -- end,
+  --     }
+  --   end,
+  -- },
+  --
   {
     "max397574/better-escape.nvim",
     config = function()
       require("better_escape").setup {
-        mapping = { "kj" }, -- a table with mappings to use
-        timeout = vim.o.timeoutlen, -- the time in which the keys must be hit in ms. Use option timeoutlen by default
-        clear_empty_lines = false, -- clear line after escaping if there is only whitespace
-        keys = "<Esc>", -- keys used for escaping, if it is a function will use the result everytime
-        -- example(recommended)
-        -- keys = function()
-        --   return vim.api.nvim_win_get_cursor(0)[2] > 1 and '<esc>l' or '<esc>'
-        -- end,
+        timeout = vim.o.timeoutlen,
+        default_mappings = false,
+        mappings = {
+          i = {
+            k = {
+              -- These can all also be functions
+              j = "<Esc>",
+            },
+          },
+          c = {
+            k = {
+              j = "<Esc>",
+            },
+          },
+          t = {
+            k = {
+              j = "<Esc>",
+            },
+          },
+          v = {
+            k = {
+              j = "<Esc>",
+            },
+          },
+          s = {
+            k = {
+              j = "<Esc>",
+            },
+          },
+        },
       }
     end,
   },
-
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
     "L3MON4D3/LuaSnip",
