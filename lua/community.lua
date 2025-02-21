@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.nvchad-ui" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },

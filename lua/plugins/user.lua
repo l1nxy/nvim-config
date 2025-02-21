@@ -131,4 +131,8 @@ return {
       )
     end,
   },
+  {
+    "dzfrias/arena.nvim",
+    config = function() require("arena").setup() end,
+  },
 }
