@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
-  { import = "astrocommunity.completion.copilot-lua" },
+  -- { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.zig" },
@@ -18,20 +18,20 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { -- further customize the options set by the community
-    "copilot.lua",
-    opts = {
-      suggestion = {
-        keymap = {
-          accept = "<C-\\>",
-          accept_word = false,
-          accept_line = false,
-          next = "<C-.>",
-          prev = "<C-,>",
-          dismiss = "<C/>",
-        },
-      },
-    },
-  },
+  -- { -- further customize the options set by the community
+  --   "copilot.lua",
+  --   opts = {
+  --     suggestion = {
+  --       keymap = {
+  --         accept = "<C-\\>",
+  --         accept_word = false,
+  --         accept_line = false,
+  --         next = "<C-.>",
+  --         prev = "<C-,>",
+  --         dismiss = "<C/>",
+  --       },
+  --     },
+  --   },
+  -- },
   -- import/override with your plugins folder
 }
